@@ -33,6 +33,7 @@ class Solution:
         dummy = ListNode()
         tail = dummy
 
+        # Time Complexity O(n+m) and Space Complexity O(1)
         while list1 and list2:
             if list1.val < list2.val:
                 tail.next = list1
