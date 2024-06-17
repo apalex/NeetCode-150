@@ -1,5 +1,6 @@
 #Products of Array Discluding Self
 
+#Medium
 #https://www.youtube.com/watch?v=bNvIQI2wAjk
 
 #Given an integer array nums, return an array output where output[i] is the product of all the elements of nums except nums[i].
@@ -24,6 +25,7 @@ class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         res = [1] * (len(nums))
 
+        #O(n)
         for i in range(1, len(nums)):
             res[i] = res[i-1] * nums[i-1]
         postfix = 1
